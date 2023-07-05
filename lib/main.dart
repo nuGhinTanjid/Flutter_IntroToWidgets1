@@ -52,7 +52,9 @@ class HomeScreen extends StatelessWidget{
               width: 300,
               margin: EdgeInsets.all(16),
               alignment: Alignment.center,
-              color: Colors.redAccent,
+              decoration: BoxDecoration(color: Colors.redAccent,
+              border: Border.all(color:Colors.blueAccent, width: 4)),
+
               child: Text('TanjidIt IS BossMan', style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,

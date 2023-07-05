@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//container, button, icon, image, fav, bottom tab/app
+//container, button, icon, image,
 
 void main(){
 
@@ -73,7 +73,15 @@ class HomeScreen extends StatelessWidget{
                 margin: EdgeInsets.only(top: 16),
                 child: Image.asset('assets/jasimoops.jpg',
                 height: 150,
-                    width: 200,))
+                    width: 200,)),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purpleAccent,
+                  padding: EdgeInsets.symmetric(horizontal: 100, vertical: 16)
+                ),
+                onPressed: () {
+              print('hellow tonmoy');
+            }, child: Text('Say Hi!'))
           ],
         ),
       ),

@@ -30,8 +30,8 @@ class HomeScreen extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              height: 200,
-              width: 200,
+              height: 100,
+              width: 100,
               decoration: BoxDecoration(
                 color: Colors.blueAccent,
                 border: Border.all(color: Colors.redAccent, width: 4),
@@ -43,13 +43,13 @@ class HomeScreen extends StatelessWidget{
 
               child: Text('Who IS BossMan?', style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 5,
               ),),
             ),
 
             Container(
-              height: 300,
-              width: 300,
+              height: 100,
+              width: 100,
               margin: EdgeInsets.all(16),
               alignment: Alignment.center,
               decoration: BoxDecoration(color: Colors.redAccent,
@@ -57,9 +57,23 @@ class HomeScreen extends StatelessWidget{
 
               child: Text('TanjidIt IS BossMan', style: TextStyle(
                 color: Colors.white,
-                fontSize: 24,
+                fontSize: 10,
               ),),
-            )
+            ),
+
+            Icon(Icons.add_business, color: Colors. purple, size: 60,),
+           // https://flutter.github.io/assets-for-api-docs/assets/widget/owl.jpg
+            
+            Image.network('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+              width: 100,
+              height: 100,
+            fit: BoxFit.fitWidth,),
+            
+            Container(
+                margin: EdgeInsets.only(top: 16),
+                child: Image.asset('assets/jasimoops.jpg',
+                height: 150,
+                    width: 200,))
           ],
         ),
       ),
